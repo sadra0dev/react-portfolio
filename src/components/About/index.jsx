@@ -2,7 +2,7 @@ import { urlFor, client, SectionWrap, MotionWrap } from "configs";
 import { motion, useState, useEffect } from "libs";
 import "./About.scss";
 
-const About = () => {
+const AboutSection = () => {
   const [abouts, setAbouts] = useState([]);
 
   useEffect(() => {
@@ -43,8 +43,8 @@ const About = () => {
   );
 };
 
-export default SectionWrap(
-  MotionWrap(About, "app__about"),
+export const About = SectionWrap(
+  MotionWrap(AboutSection, "app__about"),
   "about",
   "app__whitebg"
 );

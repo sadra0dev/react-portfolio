@@ -2,7 +2,7 @@ import { urlFor, client, SectionWrap, MotionWrap } from "configs";
 import { motion, useState, useEffect, ReactTooltip } from "libs";
 import "./Skills.scss";
 
-const Skills = () => {
+const SkillsSection = () => {
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
 
@@ -84,8 +84,8 @@ const Skills = () => {
   );
 };
 
-export default SectionWrap(
-  MotionWrap(Skills, "app__skills"),
+export const Skills = SectionWrap(
+  MotionWrap(SkillsSection, "app__skills"),
   "skills",
   "app__whitebg"
 );

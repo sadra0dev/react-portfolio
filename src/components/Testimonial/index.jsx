@@ -3,7 +3,7 @@ import { HiChevronLeft, HiChevronRight } from "components";
 import { motion, useState, useEffect } from "libs";
 import "./Testimonial.scss";
 
-const Testimonial = () => {
+const TestimonialSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [testimonials, setTestimonials] = useState([]);
   const [brands, setBrands] = useState([]);
@@ -88,8 +88,8 @@ const Testimonial = () => {
   );
 };
 
-export default SectionWrap(
-  MotionWrap(Testimonial, "app__testimonial"),
+export const Testimonial = SectionWrap(
+  MotionWrap(TestimonialSection, "app__testimonial"),
   "testimonial",
   "app__primarybg"
 );

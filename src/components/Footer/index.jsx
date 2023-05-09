@@ -2,7 +2,7 @@ import { client, SectionWrap, MotionWrap } from "configs";
 import { useState } from "libs";
 import "./Footer.scss";
 
-const Footer = () => {
+const FooterSection = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -99,8 +99,8 @@ const Footer = () => {
   );
 };
 
-export default SectionWrap(
-  MotionWrap(Footer, "app__footer"),
+export const Footer = SectionWrap(
+  MotionWrap(FooterSection, "app__footer"),
   "contact",
   "app__whitebg"
 );

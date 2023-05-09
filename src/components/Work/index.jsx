@@ -3,7 +3,7 @@ import { AiFillEye, AiFillGithub } from "components";
 import { useState, useEffect, motion } from "libs";
 import "./Work.scss";
 
-const Work = () => {
+const WorkSection = () => {
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All");
@@ -114,8 +114,8 @@ const Work = () => {
   );
 };
 
-export default SectionWrap(
-  MotionWrap(Work, "app__works"),
+export const Work = SectionWrap(
+  MotionWrap(WorkSection, "app__works"),
   "work",
   "app__primarybg"
 );

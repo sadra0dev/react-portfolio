@@ -13,7 +13,7 @@ const scaleVariants = {
   },
 };
 
-const Header = () => (
+const HeaderSection = () => (
   <div className="app__header app__flex">
     <motion.div
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
@@ -65,4 +65,4 @@ const Header = () => (
   </div>
 );
 
-export default SectionWrap(Header, "home");
+export const Header = SectionWrap(HeaderSection, "home");
