@@ -1,3 +1,7 @@
+[template]
+    incoming-hooks = ["Sanity"]
+
 [build]
     command = "npm run build"
     publish = "build"
+    base = "/"
